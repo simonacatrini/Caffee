@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #6F4E37;
+    --text-color: #333;
+    --white: #fff;
+    --transition: 0.3s;
+    --button-color:#90EE90;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    min-height: 1000px;
+
+    background-image: url("./images/background-hero.png");
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    width: 88px;
+    height: auto;
+    display: block;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 1444px;
+    height: 66px;
+    
+}
+.nav-list{
+  
+
+    display:flex;
+    justify-content: flex-end;
+    gap: 40px;
+    width: 551px;
+    height: 29.21px;
+    list-style: none;
+    padding:33px;
+    font-family: Poppins;
+
+}
+.nav-link{text-decoration: none;
+    color: white;
+    list-style: none;}
+.item-nav{
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.search-btn{
+    width: 61px;
+    height: 66px;
+    padding: 20px;
+
+}
+.hero-content {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    color:#fff;
+    
+}
+.subtitle-hero{
+    margin-bottom: 10px;
+    font-family: outfit;
+}
+.title-hero{
+    font-size: 72px;
+    font-family: Playfair Display;
+    margin-bottom: 30px;
+    
+}
+.text-hero{
+    font-size: 18px;
+    font-family: Outfit;
+    margin-bottom: 56px;
+}
+.hero-btn{
+    width: 170px;
+   height: 50px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    color:#30261C;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Outfit;
+   
+    
+}
+.hero-btn:hover{
+    background-color: var(--button-color);
+
+}
+.nav-link:hover{
+    color: var(--button-color);
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 100px;
+    background-color: #dbc9b1;
+
+       
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.10);
+            
+        position: relative;
+        z-index: 1;
+    }
+
+.svg{ 
+    margin: 50px;
+    width: 97,5px;
+    height: 125px;
+  
+}
+.section1 {
+    background-color: #E2D9C8;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.section1-title {
+    align-self: center;
+    width: 361px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    margin: 70px;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+
+.btn-arrow {
+    width: 71px;
+    height: 71px;
+    align-self: center;
+    border-radius: 50%;
+    border-color: #E2D9C8;
+}
+
+
+.btn-arrow:hover {
+    background-color: var(--button-color);
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 650px;
+    padding: 16px;
+    background-color: #dbc9b1;
+    border-radius: 20px;
+}
+
+
+.card-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.card-text {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-top: 10px;
+
+   
+}
+
+
+.btn-cards {
+    width: 130px;
+    height: 45px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    
+
+    background-color: #6F4E37;
+    color: white;
+    border-radius: 30px;
+    border: none;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+   
+}
+
+
+.btn-cards:hover {
+    background-color: var(--button-color);
+}
