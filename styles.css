@@ -116,7 +116,7 @@ body {
     background-color: #dbc9b1;
 
        
-                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.10);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.30);
             
         position: relative;
         z-index: 1;
@@ -124,7 +124,7 @@ body {
 
 .svg{ 
     margin: 50px;
-    width: 97,5px;
+    width: 97.5px;
     height: 125px;
   
 }
@@ -149,6 +149,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
+    
+ 
 }
 
 
@@ -175,6 +177,7 @@ body {
     padding: 16px;
     background-color: #E2D9C8;
     border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.30);
 }
 
 
@@ -227,10 +230,12 @@ body {
 
     height: 335px;
     background: #E2D9C8;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.30);
+    margin-top: 60px;
 }
 .section3-content {
     justify-self: start;
-    margin-left: 120px;
+    
 
     display: flex;
     flex-direction: column;
@@ -291,7 +296,7 @@ body {
 .section4{
     display: flex;
     justify-content: space-around;
-    height: 500px;
+    height: 600px;
     
 }
 .section4-photo{
@@ -309,9 +314,10 @@ body {
     margin-top: 200px;
     border: none;
 background-color: rgba(226, 217, 200, 0.5);
-    
+    max-height: fit-content;
     border-radius: 30px;
     padding:20px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.4);
 
 }
 .person{
@@ -353,6 +359,7 @@ background-color: rgba(226, 217, 200, 0.5);
     justify-content: space-between;
     margin-top:100px;
     background-color:#E2D9C8;
+    box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.30);
     
 }
 
