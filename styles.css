@@ -98,11 +98,12 @@ body {
     cursor: pointer;
     font-size: 18px;
     font-family: Outfit;
-   
-    
+    transition: transform 2s linear ;
+  
 }
 .hero-btn:hover{
     background-color: var(--button-color);
+    transform:  perspective(500px) rotateX(360deg);
 
 }
 .nav-link:hover{
