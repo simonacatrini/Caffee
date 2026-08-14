@@ -756,7 +756,9 @@ a {
 
 }
 .foto1{width: 140px;
-height: auto;}
+height: auto;
+margin-left: 10px;
+}
 
 
 
@@ -796,4 +798,33 @@ height: auto;}
     font-size: 14px;
    
 }
+
+.section3{
+    height: 250px;
+    margin-top:30px;
+background-image: url(./images/section5-svg1.svg);
+}
+.section3-content{
+gap: 20px;;
+    margin-left: 10px'
+    left:20px; 
+}
+.section3-title{
+    font-size: 24px;
+    margin-right: 120px;
+
+}
+.section3-btn{
+    gap:10px;
+    width:130px;
+    padding:8px;
+    font-size:10px;
+}
+.section3-left-img {
+  display: none;
+
+}
+
+.section3-right-img {
+    display: none;
 }
