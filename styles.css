@@ -708,7 +708,8 @@ a {
        width: 60px;
        height: auto;
        padding: 8px;
-       margin-right: 20px;
+       margin-right: 40px;
+    
    }
 .search-btn img {
     width: 100%;
@@ -725,5 +726,74 @@ a {
     gap:15px;
 }
 
+/*cardurile */
 
+.section1 {
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.section1-title {
+    align-self: center;
+    width: 300px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    margin: 70px;
+    border-color: #30261C;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+
+
+
+}
+.foto1{width: 140px;
+height: auto;}
+
+
+
+.card {
+    
+   
+    width: 190px;
+    height: 380px;
+    padding: 16px;
+   margin-left:15px;
+   margin-bottom: 30px; ;
+}
+
+
+.card-title {
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.card-text {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-arrow{ display: none;}
+
+.btn-cards {
+    width: 90px;
+    height: 60px;
+ 
+
+
+   
+    font-size: 14px;
+   
+}
 }
