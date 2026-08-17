@@ -295,7 +295,7 @@ box-shadow:0 0 5px #90EE90,
     border-radius: 20px;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.30);
     transition: transform  box-shadow 1s linear;
-}
+ }
 
 
 .card-title {
@@ -308,9 +308,10 @@ box-shadow:0 0 5px #90EE90,
 
 
 .card-text {
+
     font-family: "Outfit", sans-serif;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 20px;
     margin-top: 10px;
 
    
@@ -522,6 +523,9 @@ background-color: rgba(226, 217, 200, 0.5);
     display: flex;
     flex-direction: row;
     gap:15px;
+    flex-basis:content;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 .person-information{
     margin-top: 20px;
@@ -883,4 +887,56 @@ flex-wrap: wrap;}
  
 }
 
+.section5{margin-top: 100px;}
+.section5-text{
+    padding:15px;
+    gap:20px;
 }
+.section-title{
+    font-size:15px;
+    left:150x;
+}
+.section5-subtext{
+    font-size: 15px;
+}
+.section5-svg1{
+    display: none;
+}
+.section-svg1{
+    display: none;
+}
+.btn-mail{
+    bottom: 10px;
+    right:150px;
+}
+.footer{
+    height: 400px;
+}
+.logo-footer{position:absolute;}
+.footer-element{
+    flex-wrap: wrap;
+    position:relative;
+left: 10px;
+top:30px;
+}
+.li-element{
+    display: none;
+}
+.title-footer{
+    font-size: 20px;
+    padding:15px;
+    margin-top:50px;
+}
+.information{
+    position: relative;
+    left: -350px;
+    top:70px;
+}
+.social{
+    position: relative;
+    left:-300px;
+    top:100px;
+}
+}
+
+
