@@ -1,356 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caffea</title>
-    |<link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    <header class="header">
-        
-<section class="hero-content">
-    <p class="subtitle-hero">WELCOME</p>
-    <h1 class="title-hero">
-        We serve the <br> richest coffee in <br>the city!</h1>
-    <p class="text-hero">Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit, sed do eiusmod tempor</p>
 
-    <button class="hero-btn"> Order Now </button>
-</section>
+    <header class="header" id="home">
 
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-            <img src="./images/Coffea-logo.svg" alt="Logo" class="logo">
-        </a>
-        <ul class="nav-list">
-      
-       
-       <li class="item-nav"><a href="home.html" class="nav-link">Home</a></li>
+        <section class="hero-content">
+            <p class="subtitle-hero">WELCOME</p>
 
-       <li class="item-nav"><a href="coffe.html" class="nav-link"> Coffe</a></li>
+            <h1 class="title-hero">
+                We serve the <br>
+                richest coffee in <br>
+                the city!
+            </h1>
 
-       <li class="item-nav"><a href="bakery.html" class="nav-link"> Bakery</a></li>
-       
-       <li class="item-nav"><a href="shop.html" class="nav-link">Shop</a></li>
-       
-       <li class="item-nav"><a href="login.html" class="nav-link">Login</a></li>
-       
-       
-</ul>
-        <a href="#" class="search-btn ">
-            <img src="./images/cautare-icon.svg" alt="Search">
-        </a>
-    </nav>
-    
+            <p class="text-hero">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                <br>
+                elit, sed do eiusmod tempor
+            </p>
+
+            <button class="hero-btn">Order Now</button>
+        </section>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="./images/Coffea-logo.svg" alt="Logo" class="logo">
+            </a>
+
+            <ul class="nav-list">
+                <li class="item-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+
+                <li class="item-nav">
+                    <a href="#coffee" class="nav-link">Coffee</a>
+                </li>
+
+                <li class="item-nav">
+                    <a href="#desserts" class="nav-link">Desserts</a>
+                </li>
+
+                <li class="item-nav">
+                    <a href="#coffee" class="nav-link">Shop</a>
+                </li>
+
+                <li class="item-nav">
+                    <a href="#customer-reviews" class="nav-link">Reviews</a>
+                </li>
+            </ul>
+
+            <input class="search-input" type="text" placeholder="Search products..." list="product-suggestions" autocomplete="off" aria-label="Search products">
+            <datalist id="product-suggestions"></datalist>
+
+            <a href="#" class="search-btn">
+                <img src="./images/cautare-icon.svg" alt="Search">
+            </a>
+
+</nav>
+
     </header>
 
+        <div class="cart">
+            <button type="button" class="cart-toggle" aria-label="Shopping cart, 0 items" aria-expanded="false" aria-controls="cart-panel">🛒 <span id="cart-count">0</span></button>
+            <section id="cart-panel" class="cart-panel" aria-label="Shopping cart" hidden>
+                <h2>Your cart</h2>
+                <p id="cart-empty">Your cart is empty.</p>
+                <ul id="cart-items"></ul>
+                <p id="cart-total" hidden><strong>Total: <span id="cart-amount"></span></strong></p>
+                <a id="checkout-link" href="./checkout.html" hidden>Proceed to checkout</a>
+            </section>
+            <span id="cart-status" role="status" class="cart-status"></span>
+        </div>
 
     <main>
 
-<section class="icons">
-    
-        <img src="./images/svg1.svg" alt="svg1" class="svg"/>  
-        <img src="./images/svg2.svg" alt="svg2" class="svg"/>
-        <img src="./images/svg3.svg" alt="svg3" class="svg"/>
-        <img src="./images/svg4.svg" alt="svg4" class="svg"/>
-  
-</section>
+        <section class="icons">
+            <img src="./images/svg1.svg" alt="svg1" class="svg">
+            <img src="./images/svg2.svg" alt="svg2" class="svg">
+            <img src="./images/svg3.svg" alt="svg3" class="svg">
+            <img src="./images/svg4.svg" alt="svg4" class="svg">
+        </section>
 
-<section class="section1">
+        <!-- COFFEE -->
 
-<h2 class="section1-title">OUR SPECIAL COFFEE</h2>
+        <section class="section1" id="coffee">
 
-   <div class="cards">
+            <h2 class="section1-title">OUR SPECIAL COFFEE</h2>
 
+            <div class="cards">
 
-  <button class="btn-arrow"><img src="./images/arrow1.svg " /></button>
- 
-<article class="card">
-    <img src="./images/sectiune1f1.png" alt="poza-cafea" class="foto1" />
-    <h2 class="card-title">Lungo coffee</h2>
-    <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-    <button class="btn-cards"> Order Now</button>
-</article>
+                <button class="btn-arrow">
+                    <img src="./images/arrow1.svg" alt="Previous">
+                </button>
 
+                <div class="cards-viewport">
 
-    <article class="card">
-        <img src="./images/sectiune1f2.png" alt="poza-cafea2" class="foto1" />
-        <h2 class="card-title">Lungo coffee</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-        <button class="btn-cards"> Order Now</button>
-    </article>
+                    <div class="cards-track">
 
+                        <article class="card">
+                            <img src="./images/espresso.jpg" alt="Espresso" class="foto1">
 
+                            <h2 class="card-title">Espresso</h2>
 
+                            <p class="card-text">A short, concentrated shot with a rich crema.</p>
 
+                            <button class="btn-cards">Order Now</button>
+                        </article>
 
-<article class="card">
-    <img src="./images/sectiune1f3.png" alt="poza-cafea3" class="foto1" />
-    <h2 class="card-title">Lungo coffee</h2>
-    <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-    <button class="btn-cards"> Order Now</button>
-</article>
+                        <article class="card">
+                            <img src="./images/cappuccino.jpg" alt="Cappuccino" class="foto1">
 
+                            <h2 class="card-title">Cappuccino</h2>
 
+                            <p class="card-text">Espresso with steamed milk and a thick layer of foam.</p>
 
+                            <button class="btn-cards">Order Now</button>
+                        </article>
 
-<article class="card">
-    <img src="./images/sectiune1f4.png" alt="poza-cafea4" class="foto1" />
-    <h2 class="card-title">Lungo coffee</h2>
-    <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-    <button class="btn-cards"> Order Now</button>
-</article>
-<button class="btn-arrow"> <img src="./images/arrow2.svg" /></button>
-</div>
-</section>
+                        <article class="card">
+                            <img src="./images/latte-macchiato.jpg" alt="Latte Macchiato" class="foto1">
 
+                            <h2 class="card-title">Latte Macchiato</h2>
 
+                            <p class="card-text">Steamed milk layered with espresso and soft milk foam.</p>
 
+                            <button class="btn-cards">Order Now</button>
+                        </article>
 
-<section class="section1">
+                        <article class="card">
+                            <img src="./images/flat-white.jpg" alt="Flat White" class="foto1">
 
-    <h2 class="section1-title">OUR SPECIAL DESSERT</h2>
+                            <h2 class="card-title">Flat White</h2>
 
-    <div class="cards"">
+                            <p class="card-text">Espresso topped with silky steamed milk.</p>
 
+                            <button class="btn-cards">Order Now</button>
+                        </article>
 
-  <button class=" btn-arrow"><img src="./images/arrow1.svg " /></button>
+                        <article class="card">
+                            <img src="./images/americano.jpg" alt="Americano" class="foto1">
 
-        <article class="card">
-            <img src="./images/sectiune2f1.png" alt="poza-cafea" class="foto1" />
-            <h2 class="card-title">Lungo coffee</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-            <button class="btn-cards"> Order Now</button>
-        </article>
+                            <h2 class="card-title">Americano</h2>
 
+                            <p class="card-text">Espresso diluted with hot water for a smooth black coffee.</p>
 
+                            <button class="btn-cards">Order Now</button>
+                        </article>
 
+                        <article class="card">
+                            <img src="./images/mocha.jpg" alt="Mocha" class="foto1">
 
-        <article class="card">
-            <img src="./images/sectiune2f2.png" alt="poza-cafea2" class="foto1" />
-            <h2 class="card-title">Lungo coffee</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-            <button class="btn-cards"> Order Now</button>
-        </article>
+                            <h2 class="card-title">Mocha</h2>
 
+                            <p class="card-text">Espresso, chocolate, and steamed milk topped with whipped cream.</p>
 
+                            <button class="btn-cards">Order Now</button>
+                        </article>
 
+                    </div>
 
+                </div>
 
-        <article class="card">
-            <img src="./images/sectiune2f3.png" alt="poza-cafea3" class="foto1" />
-            <h2 class="card-title">Lungo coffee</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-            <button class="btn-cards"> Order Now</button>
-        </article>
+                <button class="btn-arrow">
+                    <img src="./images/arrow2.svg" alt="Next">
+                </button>
 
+            </div>
 
+        </section>
 
+        <!-- DESSERTS -->
 
-        <article class="card">
-            <img src="./images/sectiune2f4.png" alt="poza-cafea4" class="foto1" />
-            <h2 class="card-title">Lungo coffee</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,</p>
-            <button class="btn-cards"> Order Now</button>
-        </article>
-        <button class="btn-arrow"> <img src="./images/arrow2.svg" /></button>
-    </div>
-</section>
+        <section class="section1" id="desserts">
 
+            <h2 class="section1-title">OUR SPECIAL DESSERTS</h2>
 
-<section class="section3">
+            <div class="cards">
 
-    <img src="./images/svg1-section3.svg" alt="Coffee beans" class="section3-left-img">
+                <button class="btn-arrow">
+                    <img src="./images/arrow1.svg" alt="Previous">
+                </button>
 
-    <div class="section3-content">
-        <h2 class="section3-title">
-            Check Out Our Best <br>
-            Coffee Beans
+                <!-- Aceste două containere lipseau la Desserts -->
+
+                <div class="cards-viewport">
+
+                    <div class="cards-track">
+
+                        <article class="card">
+                            <img src="./images/tiramisu.jpg" alt="Tiramisu" class="foto1">
+
+                            <h2 class="card-title">Tiramisu</h2>
+
+                            <p class="card-text">Espresso-soaked ladyfingers layered with mascarpone and cocoa.</p>
+
+                            <button class="btn-cards">Order Now</button>
+                        </article>
+
+                        <article class="card">
+                            <img src="./images/mixed-berry-cheesecake.jpg" alt="Mixed Berry Cheesecake" class="foto1">
+
+                            <h2 class="card-title">Mixed Berry Cheesecake</h2>
+
+                            <p class="card-text">Creamy cheesecake with a biscuit crust and mixed berry topping.</p>
+
+                            <button class="btn-cards">Order Now</button>
+                        </article>
+
+                        <article class="card">
+                            <img src="./images/brownie.jpg" alt="Brownie" class="foto1">
+
+                            <h2 class="card-title">Brownie</h2>
+
+                            <p class="card-text">A fudgy chocolate brownie topped with chopped nuts.</p>
+
+                            <button class="btn-cards">Order Now</button>
+                        </article>
+
+                        <article class="card">
+                            <img src="./images/vanilla-eclair.jpg" alt="Vanilla Eclair" class="foto1">
+
+                            <h2 class="card-title">Vanilla Eclair</h2>
+
+                            <p class="card-text">Choux pastry filled with vanilla cream and glazed with chocolate.</p>
+
+                            <button class="btn-cards">Order Now</button>
+                        </article>
+
+                        <article class="card">
+                            <img src="./images/lemon-tart.jpg" alt="Lemon Tart" class="foto1">
+
+                            <h2 class="card-title">Lemon Tart</h2>
+
+                            <p class="card-text">A buttery pastry shell filled with tangy lemon curd.</p>
+
+                            <button class="btn-cards">Order Now</button>
+                        </article>
+
+                        <article class="card">
+                            <img src="./images/panna-cotta.jpg" alt="Panna Cotta" class="foto1">
+
+                            <h2 class="card-title">Panna Cotta</h2>
+
+                            <p class="card-text">Silky vanilla cream topped with berry sauce and fresh berries.</p>
+
+                            <button class="btn-cards">Order Now</button>
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <button class="btn-arrow">
+                    <img src="./images/arrow2.svg" alt="Next">
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="section3">
+
+            <img src="./images/svg1-section3.svg" alt="Coffee beans" class="section3-left-img">
+
+            <div class="section3-content">
+
+                <h2 class="section3-title">
+                    Check Out Our Best
+                    <br>
+                    Coffee Beans
+                </h2>
+
+                <button class="section3-btn">
+                    Explore Our Products
+
+                    <img src="./images/section3-arrrows.svg" alt="" class="section3-arrow">
+                </button>
+
+            </div>
+
+            <img src="./images/svg2-section3.svg" alt="Coffee beans" class="section3-right-img">
+
+        </section>
+
+        <h2 class="title-section4">
+            <span class="text-title4">
+                Come and Join
+                <br>
+            </span>
+
+            OUR HAPPY CUSTOMERS
         </h2>
 
-        <button class="section3-btn">
-            Explore Our Products
-            <img src="./images/section3-arrrows.svg" alt="" class="section3-arrow">
-        </button>
-    </div>
-
-    
-    <img src="./images/svg2-section3.svg" alt="Coffee beans" class="section3-right-img">
-
-</section>
-
-
-
-
-<h2 class="title-section4"> <span class="text-title4">Come and Join<br> </span>OUR HAPPY CUSTOMERS </h2>
-
-<section class="section4">
-
-
-<article class="article">
-    <div class="person">
-    <img src="./images/foto-sec4.png" alt="poza-profil" class="section4-photo" />
-
-    <div class="person-information">
-    <h3 class="section4-name"> James Smith</h3>
-    <p class="section4-first-text"> Entrepreneur</p>
-    </div>
-    </div>
-    
-     <p class="section4-second-text">Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet,
-    consectetur adipisicing elit,Lorem ipsum amet, consectetur adipisicing elit,Lorem ipsum dolor sit adipisicing elit,Lorem
-    ipsum dolor sit dolor sit amet, consectetur adipisicing elit,</p>
-
-<div class="star-icons">
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/section4-star-empty.svg" alt="star-sign" class="star-icon" />
-
-
-</div>
-   
-</article>
-
-
-
-<article class="article">
-    <div class="person">
-    <img src="./images/foto-sec4.png" alt="poza-profil" class="section4-photo" />
-
-    <div class="person-information">
-    <h3 class="section4-name"> James Smith</h3>
-    <p class="section4-first-text"> Entrepreneur</p>
-    </div>
-    </div>
-     <p class="section4-second-text">Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet,
-    consectetur adipisicing elit,Lorem ipsum amet, consectetur adipisicing elit,Lorem ipsum dolor sit adipisicing elit,Lorem
-    ipsum dolor sit dolor sit amet, consectetur adipisicing elit,</p>
-
-
-    <div class="star-icons">
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-    <img src="./images/section4-star-empty.svg" alt="star-sign" class="star-icon" />
-  
-        
-    </div>
-</article>
-<article class="article">
-    <div class="person">
-        <img src="./images/foto-sec4.png" alt="poza-profil" class="section4-photo" />
-
-        <div class="person-information">
-            <h3 class="section4-name"> James Smith</h3>
-            <p class="section4-first-text"> Entrepreneur</p>
+        <section class="section4" id="customer-reviews" aria-label="Customer reviews"></section>
+        <div class="review-navigation" role="group" aria-label="Browse reviews">
+            <button type="button" class="btn-arrow" id="previous-review" aria-label="Previous review" aria-controls="customer-reviews" disabled>
+                <img src="./images/arrow1.svg" alt="">
+            </button>
+            <span id="review-range" role="status"></span>
+            <button type="button" class="btn-arrow" id="next-review" aria-label="Next review" aria-controls="customer-reviews" disabled>
+                <img src="./images/arrow2.svg" alt="">
+            </button>
         </div>
-    </div>
-    <p class="section4-second-text">Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit amet,
-        consectetur adipisicing dolor sit amet,
-        consectetur adipisicing elit,Lorem ipsum amet, consectetur adipisicing elit,Lorem ipsum dolor sit adipisicing
-        elit,Lorem
-        ipsum dolor sit dolor sit amet, consectetur adipisicing elit,</p>
+        <button type="button" id="write-review" class="review-button">Write a review</button>
 
+        <template id="review-card">
+            <article class="article">
+                <div class="person">
+                    <img alt="" class="section4-photo">
+                    <div class="person-information">
+                        <h3 class="section4-name"></h3>
+                        <p class="section4-first-text"></p>
+                    </div>
+                </div>
+                <div class="review-body">
+                    <p class="section4-second-text"></p>
+                    <button type="button" class="review-more" aria-expanded="false" hidden>Read more</button>
+                </div>
+                <div class="star-icons"></div>
+            </article>
+        </template>
+        <dialog id="review-dialog" aria-labelledby="review-heading">
+            <form id="review-form">
+                <h2 id="review-heading">Write a review</h2>
+                <label>Name <input name="reviewer" maxlength="60" required></label>
+                <label>Occupation <input name="occupation" maxlength="60"></label>
+                <label>Rating
+                    <select name="rating">
+                        <option value="5">5 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="2">2 stars</option>
+                        <option value="1">1 star</option>
+                    </select>
+                </label>
+                <label>Your review <textarea name="review" rows="5" maxlength="2000" required></textarea></label>
+                <div class="quantity-actions">
+                    <button type="button" id="cancel-review">Cancel</button>
+                    <button type="submit">Post review</button>
+                </div>
+            </form>
+        </dialog>
 
-    <div class="star-icons">
-        <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-        <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-        <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-        <img src="./images/star-section4.svg" alt="star-sign" class="star-icon" />
-        <img src="./images/section4-star-empty.svg" alt="star-sign" class="star-icon" />
+        <section class="section5">
 
+            <img src="./images/section5-svg1.svg" alt="svg1-sectiune5" class="section5-svg1">
 
-    </div>
-</article>
+            <div class="section5-text">
 
-</section>
+                <h2 class="section5-title">
+                    Join in and ger 15% off!
+                </h2>
 
+                <p class="section5-subtext">
+                    Subscribe to our newsletter in get 15% off discount code.
+                </p>
 
+                <div class="input-container">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Email Address">
+                </div>
 
-<section class="section5">
-<img src="./images/section5-svg1.svg" alt="svg1-sectiune5" class="section5-svg1" />
+                <button type="submit" class="btn-mail">
+                    Subscribe
+                </button>
 
-<div class="section5-text">
-<h2 class="section5-title"> Join in and ger 15% off!</h2>
-<p class="section5-subtext">Subscribe to our newsletter in get 15% off discount code.</p> 
+            </div>
 
+            <img src="./images/section5-svg2.svg" alt="sectiune5-svg2" class="section-svg1">
 
-<div class="input-container">
-<i class="fa-regular fa-envelope"></i>
-<input type="email" placeholder="Email Address">
-</div>
-<button type="submit" class="btn-mail">Subscribe</button>
-</div>
-<img src="./images/section5-svg2.svg" alt="sectiune5-svg2" class="section-svg1" />
+        </section>
 
-</section>
     </main>
-
 
     <footer class="footer">
 
-<img src="./images/Coffea-logo.svg" alt="logo" class="logo-footer" />
+        <img src="./images/Coffea-logo.svg" alt="logo" class="logo-footer">
 
+        <div class="footer-element">
 
-<div class="footer-element">
+            <h3 class="title-footer">PRIVACY</h3>
 
-<h3 class="title-footer">PRIVACY</h3>
-<ul>
-    <li class="li-element"><a href="#">Terms of Use</a></li>
-    <li class="li-element"><a href="#">Privacy Policy</a></li>
-    <li class="li-element"><a href="#">Cookies</a></li>
-</ul>
+            <ul>
+                <li class="li-element">
+                    <a href="#">Terms of Use</a>
+                </li>
 
-</div>
+                <li class="li-element">
+                    <a href="#">Privacy Policy</a>
+                </li>
 
-<div class="footer-element">
-<h3 class="title-footer">SERVICES</h3>
-<ul>
-    <li class="li-element"><a href="#">Shop</a></li>
-    <li class="li-element"><a href="#">Order ahead</a></li>
-    <li class="li-element"><a href="#">Menu</a></li>
-</ul>
+                <li class="li-element">
+                    <a href="#">Cookies</a>
+                </li>
+            </ul>
 
-</div>
+        </div>
 
-<div class="footer-element">
-<h3 class="title-footer">ABOUT US</h3>
-<ul>
-    <li class="li-element"><a href="#">Find a location</a></li>
-    <li class="li-element"><a href="#">About us</a></li>
-    <li class="li-element"><a href="#">Out story</a></li>
-</ul>
+        <div class="footer-element">
 
-</div>
+            <h3 class="title-footer">SERVICES</h3>
 
-<div class="footer-element">
-<h3 class="title-footer information">INFORMATION</h3>
-<ul>
-    <li class="li-element"><a href="#">Plons & pricing</a></li>
-    <li class="li-element"><a href="#">Sell your prodcts</a></li>
-    <li class="li-element"><a href="#">Jobs</a></li>
-</ul>
+            <ul>
+                <li class="li-element">
+                    <a href="#">Shop</a>
+                </li>
 
-</div>
+                <li class="li-element">
+                    <a href="#">Order ahead</a>
+                </li>
 
-<div>
-<h3 class="title-footer social">SOCIAL MEDIA</h3>
-<a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
-<a href="https://x.com" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
-<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <li class="li-element">
+                    <a href="#">Menu</a>
+                </li>
+            </ul>
 
+        </div>
 
-</div>
+        <div class="footer-element">
+
+            <h3 class="title-footer">ABOUT US</h3>
+
+            <ul>
+                <li class="li-element">
+                    <a href="#">Find a location</a>
+                </li>
+
+                <li class="li-element">
+                    <a href="#">About us</a>
+                </li>
+
+                <li class="li-element">
+                    <a href="#">Out story</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer-element">
+
+            <h3 class="title-footer information">
+                INFORMATION
+            </h3>
+
+            <ul>
+                <li class="li-element">
+                    <a href="#">Plans & pricing</a>
+                </li>
+
+                <li class="li-element">
+                    <a href="#">Sell your prodcts</a>
+                </li>
+
+                <li class="li-element">
+                    <a href="#">Jobs</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3 class="title-footer social">
+                SOCIAL MEDIA
+            </h3>
+
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://x.com" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
 
     </footer>
+
+    <script src="./prices.js"></script>
+    <script src="./script.js"></script>
+
+    <dialog id="quantity-dialog" aria-labelledby="quantity-title">
+        <form id="quantity-form">
+            <h2 id="quantity-title"></h2>
+            <label for="order-quantity">Quantity</label>
+            <input type="number" id="order-quantity" min="1" max="999" step="1" required autofocus>
+            <div class="quantity-actions">
+                <button type="button" id="cancel-order">Cancel</button>
+                <button type="submit">Add to cart</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="./reviews.js"></script>
 </body>
+
 </html>
